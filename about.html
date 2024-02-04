@@ -4,36 +4,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>todo</title>
+    <title>About Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        header {
+            background-color: #ddd;
+            padding: 10px;
+            text-align: left;
+            display: flex;
+            align-items: center;
+        }
+
+        h1 {
+            margin: 0;
+            flex-grow: 1;
+        }
+
+        img {
+            max-width: 50px;
+            margin-right: 10px;
+        }
+
+        nav {
+            margin-right: 10px;
+        }
+
+        main {
+            text-align: center;
+            margin: 20px;
+            margin-bottom: 80px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        h3 {
+            color: #333;
+            margin-top: 20px;
+        }
+
+        p {
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        form {
+            width: 50%;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            background-color: #ddd;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 
 <body>
     <header>
-        <h1>to do list </h1>        <img src="./download (1).png" alt="logo">
-
-        <nav> <a href="./index.html"> about page </a></nav>
+        <img src="./download (1).png" alt="logo">
+        <h1>Todo List</h1>
+        <nav><a href="./about.html">About Us</a></nav>
+        <nav><a href="./index.html">Home</a></nav>
     </header>
     <main>
-        <h2>Task Status</h2>
-
-        <h3>name : nour </h3>
-        <p>I am an AI graduated student </p>
+        <h2>About Nour</h2>
+        <h3>Name: Nour</h3>
+        <p>I am an AI graduated student.</p>
         <h2>Contact Form</h2>
 
         <form action="#" method="post">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
-    
+
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
-    
+
             <label for="message">Message:</label>
             <textarea id="message" name="message" rows="4" required></textarea>
-    
+
             <input type="submit" value="Submit">
         </form>
     </main>
-    <footer><h5>copy right </h5></footer>
+    <footer>
+        <h5>&copy; 2024 Todo List</h5>
+    </footer>
 </body>
 
 </html>
